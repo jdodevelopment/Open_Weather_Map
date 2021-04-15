@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Weather</string>
+
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="exit">Salir</string>
+    <string name="confirm_exit">¿Realmente desea salir?</string>
+    <string name="retry">Reintentar</string>
+    <string name="pronostico_proximos_5_d_as">Pronostico proximos 5 días</string>
+    <string name="cambiar_ubicaci_n">Cambiar ubicación</string>
+
+
+</resources>

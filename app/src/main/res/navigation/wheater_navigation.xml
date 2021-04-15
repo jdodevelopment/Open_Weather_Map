@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/weatherDetailFragment">
+
+
+    <fragment
+        android:id="@+id/weatherDetailFragment"
+        android:name="ar.com.jdodevelopment.weather.ui.wheather.detail.WeatherDetailFragment"
+        tools:layout="@layout/weather_detail_fragment">
+
+        <action
+            android:id="@+id/actionOpenForecast"
+            app:destination="@id/forecastFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/forecastFragment"
+        android:name="ar.com.jdodevelopment.weather.ui.wheather.forecast.ForecastFragment"
+        android:label="ForecastFragment"
+        tools:layout="@layout/forecast_fragment" >
+        <argument
+            android:name="city"
+            app:argType="ar.com.jdodevelopment.weather.data.model.City" />
+    </fragment>
+
+</navigation>
